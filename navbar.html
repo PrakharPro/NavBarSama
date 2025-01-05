@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+        main{
+            flex: 1;
+        }
+        .navbar{
+            background-color: khaki;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            padding: 1rem 2rem;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .navbar ul{
+            list-style-type: none;
+            display: flex;
+            gap: 2.5rem;
+        }
+    
+        .navbar ul li a{
+            text-decoration: none;
+            transition: 0.4s;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .navbar ul li a:hover{
+            background-color: brown;
+            color: wheat;
+        }
+        #search input{
+            height: 20px;
+            border-radius: 5px;
+            padding: 0.9rem;
+        }
+        #search button{
+            height: 2rem;
+            width: 5rem;
+            background-color: blue;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 10px;
+        }
+        #logo{
+            display: flex;
+           align-self: center;
+           gap: 0.5rem;
+        }
+        #logo img{
+            height: 40px;
+            width: 40px;
+            object-fit: cover;
+        }
+        footer{
+            background-color: khaki;
+            padding: 2rem;
+            align-items: center;
+            text-align: center;
+        }
+
+        .navbar ul li {
+        position: relative;  /* Add this to make dropdown positioning work */
+    }
+
+    #int {
+        display: none;
+        position: absolute;
+        top: 100%;          /* Position below the parent */
+        left: 0;
+        background-color: khaki;
+        min-width: 150px;   /* Give it a minimum width */
+        border-radius: 5px;
+        padding: 0.5rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    #int li {
+        padding: 0.5rem 1rem;
+        transition: 0.3s;
+    }
+
+    #int li:hover {
+        background-color: wheat;
+        cursor: pointer;
+    }
+
+    .navbar ul li:hover #int {
+        display: block;
+    }
+       
+    </style>
+</head>
+<body>
+    <header>
+   <nav class="navbar">
+    <div id="logo">
+        <img src="./6.jpg" height="100%"/>
+        <span>Freedom</span>
+    </div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a>
+        <ul id="int">
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ul>
+        </li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+    <div id="search">
+        <input type="text" placeholder="Search Here" />
+        <button>Search</button>
+    </div>
+   </nav>
+   </header>
+<main style="font-size: 50px;">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi eius architecto molestiae tenetur quia recusandae blanditiis commodi sint ut assumenda, necessitatibus ea ducimus laudantium aspernatur qui repellat id placeat.
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum porro deleniti cumque dolore? Nam illo deleniti earum sapiente. Repudiandae sequi aperiam ducimus facilis quod sed perspiciatis magnam nemo voluptatibus excepturi.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ipsa? Facere ratione eligendi, temporibus quibusdam sapiente eveniet quas, debitis sint necessitatibus quaerat culpa delectus. Dolorem tempora aliquam libero modi dicta!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit enim mollitia quo itaque rem dolorum, dolorem iusto commodi. Consequuntur itaque officia, eius fugit earum dolore minus libero aut deserunt totam.
+</main>
+   <footer>Made with Love &hearts; <br>
+     &copy;1996-2024, Freedom.com, Inc. or its affiliates
+   </footer>
+
+
+
+</body>
+</html>
